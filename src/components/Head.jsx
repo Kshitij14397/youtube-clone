@@ -2,30 +2,30 @@ import React from "react";
 
 const Head = () => {
   return (
-    <div className="h-14 px-4 grid grid-flow-col items-center justify-between">
-      <div className="flex">
+    <div className="grid grid-flow-col p-5 m-2 shadow-md">
+      <div className="flex col-span-1">
         <img
-          className="w-10 h-10 p-2 box-border"
+          className="h-8"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png"
           alt="menu"
         />
         <img
-          className="w-[116px] h-[3.6rem] pl-4 pr-[14px] py-[18px]"
+          className="h-8 mx-4"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png"
           alt="youtube-logo"
         />
       </div>
-      <div className="flex flex-row flex-grow-0 flex-shrink basis-[600px]">
+      <div className="col-span-10 px-10">
       <input
-          className="px-1 flex-grow flex-shrink basis-[0.000000001px] h-10 relative rounded-[40px] border-[2px] border-solid-black border-gray-200 shadow-sm"
+          className="w-1/2 border border-gray-400 p-2 rounded-l-full"
           type="text"
           placeholder="Search"
         />
-        <button>Search</button>
+        <button className="border border-gray-400 px-4 py-2 rounded-r-full bg-gray-100">🔍</button>
       </div>
-      <div className="flex min-w-[225px] items-center justify-end">
+      <div className="col-span-1">
         <img
-          className="h-9 w-9 mx-2 rounded-[50%] overflow-hidden"
+          className="h-8"
           src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
           alt="user"
         />
