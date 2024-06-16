@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from './Sidebar';
 import MainContainer from './MainContainer';
 import { useSelector, UseSelector } from 'react-redux';
+import { Outlet } from 'react-router-dom';
 
 const Body = () => {
 
@@ -9,7 +10,7 @@ const Body = () => {
   return (
     <div className='flex'>
       {isMenuOpen && <Sidebar/>}
-      <MainContainer/>
+      <Outlet/>
     </div>
   )
 }
