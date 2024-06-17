@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
 import Sidebar from './Sidebar';
 import MainContainer from './MainContainer';
 import { useSelector, UseSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 
 const Body = () => {
-
-  const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
-  return (
-    <div className='flex'>
-      {isMenuOpen && <Sidebar/>}
-      <Outlet/>
-    </div>
-  )
-}
+    const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+    return (
+        <div className="flex">
+            {isMenuOpen && <Sidebar />}
+            <Outlet />
+        </div>
+    );
+};
 
 export default Body;
