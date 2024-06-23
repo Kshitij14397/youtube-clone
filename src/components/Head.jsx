@@ -62,7 +62,7 @@ const Head = () => {
                 </a>
             </div>
             <div className="col-span-10 px-10">
-                <div>
+                <div className="-mt-1">
                     <input
                         className="w-1/2 border border-gray-400 py-2 px-6 rounded-l-full"
                         type="text"
